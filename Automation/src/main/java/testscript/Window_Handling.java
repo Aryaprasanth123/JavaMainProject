@@ -23,9 +23,8 @@ public class Window_Handling  {
 		System.out.println(parent);
 		
 		Set<String> child=driver.getWindowHandles();
+		System.out.println("Child Window:"+child);
 		String title="";
-		
-		//System.out.println("Child Window:"+child);
 		for(String temp:child)
 		{
 			if(!temp.equals(parent))
