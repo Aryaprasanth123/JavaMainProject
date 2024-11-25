@@ -1,5 +1,8 @@
 package pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,9 +27,11 @@ public void enterPassword(String passwordfield)
 {
 	password.sendKeys(passwordfield);
 }
-public void clickLogin()
+public void clickLogin() throws AWTException
 {
 	loginbtn.click();
+	Robot robot=new Robot();
+	robot.delay(1000);
 }
 public boolean isDashboardLoaded()
 {
