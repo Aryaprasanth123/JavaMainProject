@@ -2,13 +2,17 @@ package testscript;
 
 import static org.testng.Assert.assertTrue;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
 
 public class LoginPage_Test extends Base {
   @Test
-  public void verifyUserIsAbleToLoginValidCredenstials() {
+  public void verifyUserIsAbleToLoginValidCredenstials() throws AWTException {
+	  
 	  LoginPage login=new LoginPage(driver);
 	  login.enterUsername("carol");
 	  login.enterPassword("1q2w3e4r");

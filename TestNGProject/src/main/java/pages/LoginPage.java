@@ -15,7 +15,7 @@ public LoginPage(WebDriver driver)
 @FindBy(id="loginform-username") WebElement username;
 @FindBy(id="loginform-password") WebElement password;
 @FindBy(xpath="//button[@class='btn btn-default']") WebElement loginbtn;
-@FindBy(xpath="////a[text()='Dashboard']") WebElement dashboard;
+@FindBy(xpath="//a[text()='Dashboard']") WebElement dashboard;
 public void enterUsername(String usernamefield)
 {
 	username.sendKeys(usernamefield);

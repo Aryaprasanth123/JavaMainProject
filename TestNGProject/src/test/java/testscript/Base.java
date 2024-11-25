@@ -13,11 +13,12 @@ public class Base {
 	  driver=new ChromeDriver();
 	  driver.get("https://www.qabible.in/payrollapp/site/login");
 	  driver.manage().window().maximize();
+	 
   }
 
   @AfterMethod
   public void afterMethod() {
-	  driver.quit();
+	 // driver.quit();
   }
 
 }
